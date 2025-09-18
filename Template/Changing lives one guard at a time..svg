@@ -1,0 +1,16 @@
+<svg width="626" height="28" viewBox="0 0 626 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_g_7_68)">
+<text fill="#FFF1E6" xml:space="preserve" style="white-space: pre" font-family="Cabin Sketch" font-size="36" letter-spacing="0em"><tspan x="0.326172" y="26.35">CHANGING LIVES ONE GUARD AT A TIME. </tspan></text>
+</g>
+<defs>
+<filter id="filter0_g_7_68" x="0.354175" y="0.971973" width="625.153" height="26.872" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="1.25 1.25" numOctaves="3" seed="214" />
+<feDisplacementMap in="shape" scale="1.6000000238418579" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_7_68">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Anonim';
+  src: url('fonts/Anonim.otf') format('opentype'),
+       url('fonts/Anonim.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Piedra';
+  src: url('fonts/Piedra/Piedra-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.body_bg {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  
+  /* Remove blur from here and background - we'll use pseudo-element */
+  background: linear-gradient(90deg, #030F1D 0%, #200D0E 100%);
+}
+
+/* Blurred background image using pseudo-element */
+.body_bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("Background.png") no-repeat center center;
+  background-size: cover;
+  filter: blur(4px);
+  z-index: -2;
+}
+
+/* Gradient overlay */
+.body_bg::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(3, 15, 29, 0.6) 0%, rgba(32, 13, 14, 0.6) 100%);
+  z-index: -1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  width: 652px;
+  height: 50px;
+  margin: 10px auto; /* center navbar in page */
+
+  border-radius: 200px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.44) 100%); /* adjust colors */
+  background-blend-mode: multiply, normal;
+
+  background: url("Frame 1.svg") no-repeat center;
+  background-size: 100% 100%;
+
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.44);
+  position: relative;
+  z-index: 1;
+}
+
+.navbar_text {
+  font-family: 'Anonim', cursive;
+  font-size: 20px;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #BFCEFF 0%, #C6A6E9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* fallback */
+  cursor: pointer;
+
+
+}
+
+.navbar_text:hover {
+  background: linear-gradient(90deg, #5B80F9 0%, #FB5692 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+.watermark_img {
+
+  opacity: 0.5; /* adjust transparency as needed */
+  z-index: 0; /* ensure it's behind other content */
+
+  background:  cover no-repeat;
+  mix-blend-mode: color-dodge;
+  filter: blur(11px);
+
+}
+
+.card-tsunami {
+  width: 642px;
+  height: 388px;
+  flex-shrink: 0;
+  
+  border-radius: 32px;
+  background: linear-gradient(90deg, #0423c4, #405def, #889af6);
+
+  position: absolute;
+  top: 15%;
+  left: 24%;
+  transform: translateX(-50%);
+  z-index: 2;
+  
+  /* Add box-shadow glow animation instead */
+  animation: glowPulse 4s ease-in-out infinite;
+  overflow: visible;
+  padding-bottom: 20px;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(4, 35, 196, 0.5),
+      0 0 40px rgba(64, 93, 239, 0.3),
+      0 0 60px rgba(136, 154, 246, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 30px rgba(4, 35, 196, 0.7),
+      0 0 60px rgba(64, 93, 239, 0.5),
+      0 0 90px rgba(136, 154, 246, 0.4);
+  }
+}
+
+.tsunami-img {
+  width: 314px;
+  height: 297px;
+  flex-shrink: 0;
+  z-index: 3;
+  
+  position: absolute;
+  top: 18%;
+  left: 27.5%;
+  transform: translateX(-50%);
+}
+
+.tsunami-text {
+  position: absolute;
+  top: -40%;
+  left: 90%;
+  transform: translateX(-50%);
+  
+  font-family: 'Anonim', cursive;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  
+  background: linear-gradient(90deg, #BFCEFF 0%, #C6A6E9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* fallback */
+  
+  z-index: 3;
+}
+
+.tsunami-info p {
+  width: 300px;  /* Increased width to prevent text cutoff */
+  height: auto;  /* Let height adjust to content */
+  flex-shrink: 0;
+  font-family: 'Piedra', cursive;
+  font-size: 24px;  /* Slightly reduced font size */
+  line-height: 1.4;  /* Better line height for readability */
+  letter-spacing: 0%;
+  text-align: center;
+  background: linear-gradient(180deg, #9096FC 0%, #6870FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  
+  position: absolute;
+  bottom: 23%;  /* Position from bottom */
+  left: 76%;
+  transform: translateX(-50%);  /* Center horizontally */
+  
+  z-index: 4;
+  padding: 15px;
+  margin: 0;
+  text-shadow: 
+      0 0 10px rgba(144, 150, 252, 0.5),
+      0 0 20px rgba(104, 112, 255, 0.3),
+      0 0 30px rgba(144, 150, 252, 0.1);
+}
+
+.card-tsunami {
+    padding-bottom: 120px;  /* Increased padding to accommodate text */
+}
