@@ -58,7 +58,7 @@
 
 @font-face {
   font-family: "Pompiere";
-  src: url("../fonts/Pompiere/Pompiere-Regular.ttf") format("truetype");
+  src: url("fonts/Pompiere/Pompiere-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
