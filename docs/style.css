@@ -14,14 +14,14 @@
 
 @font-face {
   font-family: 'Bluprint';
-  src: url('fonts/bluprint-font/Bluprintdemo-YOMv.otf') format('opentype');
+  src: url('./fonts/bluprint-font/Bluprintdemo-YOMv.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Cabin Sketch";
-  src: url("fonts/Cabin_Sketch/CabinSketch-Regular.ttf") format("truetype");
+  src: url("./fonts/Cabin_Sketch/CabinSketch-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: "Cabin Sketch";
-  src: url("fonts\Cabin_Sketch\CabinSketch-Bold.ttf") format("truetype");
+  src: url(".\fonts\Cabin_Sketch\CabinSketch-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -37,49 +37,49 @@
 
 @font-face {
   font-family: 'Gaegu';
-  src: url('fonts/Gaegu/Gaegu-Regular.ttf') format('truetype');
+  src: url('./fonts/Gaegu/Gaegu-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gaegu';
-  src: url('fonts/Gaegu/Gaegu-Bold.ttf') format('truetype');
+  src: url('./fonts/Gaegu/Gaegu-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gaegu';
-  src: url('fonts/Gaegu/Gaegu-Light.ttf') format('truetype');
+  src: url('./fonts/Gaegu/Gaegu-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pompiere";
-  src: url("fonts/Pompiere/Pompiere-Regular.ttf") format("truetype");
+  src: url("./fonts/Pompiere/Pompiere-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poor-Story";
-  src: url("fonts/Poor_Story/PoorStory-Regular.ttf") format("truetype");
+  src: url("./fonts/Poor_Story/PoorStory-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Cherry Bomb";
-  src: url("fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf") format("truetype");
+  src: url("./fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Hachi Maru Pop";
-  src: url("fonts/Hachi_Maru_Pop/HachiMaruPop-Regular.ttf") format("truetype");
+  src: url("./fonts/Hachi_Maru_Pop/HachiMaruPop-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
