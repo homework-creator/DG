@@ -86,7 +86,7 @@
 
 @font-face {
   font-family: "Indie Flower";
-  src: url("fonts/Indie_Flower/IndieFlower-Regular.ttf") format("truetype");
+  src: url("./fonts/Indie_Flower/IndieFlower-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
