@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Anonim';
-  src: url('fonts/Anonim.otf') format('opentype'),
+  src: url('docs/fonts/Anonim.otf') format('opentype'),
        url('fonts/Anonim.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -14,14 +14,14 @@
 
 @font-face {
   font-family: 'Bluprint';
-  src: url('fonts/bluprint-font/Bluprintdemo-YOMv.otf') format('opentype');
+  src: url('docs/fonts/bluprint-font/Bluprintdemo-YOMv.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Cabin Sketch";
-  src: url("fonts/Cabin_Sketch/CabinSketch-Regular.ttf") format("truetype");
+  src: url("docs/fonts/Cabin_Sketch/CabinSketch-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: "Cabin Sketch";
-  src: url("fonts\Gaegu\Gaegu-Bold.ttf") format("truetype");
+  src: url("docs\fonts\Gaegu\Gaegu-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -37,42 +37,42 @@
 
 @font-face {
   font-family: 'Gaegu';
-  src: url('fonts/Gaegu/Gaegu-Regular.ttf') format('truetype');
+  src: url('docs/fonts/Gaegu/Gaegu-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gaegu';
-  src: url('fonts/Gaegu/Gaegu-Bold.ttf') format('truetype');
+  src: url('docs/fonts/Gaegu/Gaegu-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gaegu';
-  src: url('fonts/Gaegu/Gaegu-Light.ttf') format('truetype');
+  src: url('docs/fonts/Gaegu/Gaegu-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pompiere";
-  src: url("fonts/Pompiere/Pompiere-Regular.ttf") format("truetype");
+  src: url("docs/fonts/Pompiere/Pompiere-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poor-Story";
-  src: url("fonts/Poor_Story/PoorStory-Regular.ttf") format("truetype");
+  src: url("docs/fonts/Poor_Story/PoorStory-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Cherry Bomb";
-  src: url("fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf") format("truetype");
+  src: url("docs/fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -86,7 +86,7 @@
 
 @font-face {
   font-family: "Indie Flower";
-  src: url("fonts/Indie_Flower/IndieFlower-Regular.ttf") format("truetype");
+  src: url("docs/fonts/Indie_Flower/IndieFlower-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
