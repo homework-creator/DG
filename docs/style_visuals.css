@@ -244,3 +244,133 @@
   cursor: pointer;
 }
 
+.card-cyclone {
+  width: 642px;
+  height: 388px;
+  flex-shrink: 0;
+  
+  border-radius: 32px;
+  background: linear-gradient(90deg, #babcc2, #e7e8eed3, #fefeff5b);
+
+  position: absolute;
+  top: 15%;
+  left: 75%;
+  transform: translateX(-50%);
+  z-index: 2;
+  
+  /* Add box-shadow glow animation instead */
+  animation: glowPulse_cyclone 4s ease-in-out infinite;
+  overflow: visible;
+  padding-bottom: 20px;
+}
+
+@keyframes glowPulse_cyclone {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(255, 254, 254, 0.5),
+      0 0 40px rgba(255, 255, 255, 0.3),
+      0 0 60px rgba(136, 154, 246, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 30px rgba(182, 183, 184, 0.7),
+      0 0 60px rgba(232, 232, 232, 0.5),
+      0 0 90px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.cyclone-img {
+  width: 314px;
+  height: 297px;
+  flex-shrink: 0;
+  z-index: 3;
+  
+  position: absolute;
+  top: 18%;
+  left: 27.5%;
+  transform: translateX(-50%);
+}
+
+.cyclone-text {
+  position: absolute;
+  top: -40%;
+  left: 90%;
+  transform: translateX(-50%);
+  
+  font-family: 'Anonim', cursive;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  
+  background: linear-gradient(90deg, #BFCEFF 0%, #C6A6E9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* fallback */
+  
+  z-index: 3;
+}
+
+.cyclone-info p {
+  width: 300px;  /* Increased width to prevent text cutoff */
+  height: auto;  /* Let height adjust to content */
+  flex-shrink: 0;
+  font-family: 'Piedra', cursive;
+  font-size: 24px;  /* Slightly reduced font size */
+  line-height: 1.4;  /* Better line height for readability */
+  letter-spacing: 0%;
+  text-align: center;
+  background: linear-gradient(180deg, #fff 0%, #CFCFCF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  
+  position: absolute;
+  bottom: 23%;  /* Position from bottom */
+  left: 76%;
+  transform: translateX(-50%);  /* Center horizontally */
+  
+  z-index: 4;
+  padding: 15px;
+  margin: 0;
+  text-shadow: 
+      0 0 10px rgb(218, 218, 218, 0.10),
+      0 0 20px rgba(255, 254, 254, 0.993),
+      0 0 30px rgba(255, 255, 255, 0.877);
+}
+
+.card-cyclone {
+    padding-bottom: 120px;  /* Increased padding to accommodate text */
+}
+
+.cyclone-button input[type="button"] {
+  width: 120px;
+  height: 38px;
+  flex-shrink: 0;
+  
+  border-radius: 44px;
+  background: transparent;
+  border: 0.1px solid #fff;
+  
+  position: absolute;
+  bottom: 8%;
+  left: 76%;
+  transform: translateX(-50%);
+  
+  mix-blend-mode: plus-lighter;
+  border-radius: 25.5px;
+  border: 1px solid #fff;
+  background: transparent;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+
+  background: #fff;
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: plus-lighter;
+  cursor: pointer;
+}
