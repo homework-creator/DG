@@ -509,3 +509,152 @@
   cursor: pointer;
   backdrop-filter: blur(8px);
 }
+
+.card-flood {
+  width: 642px;
+  height: 388px;
+  flex-shrink: 0;
+  
+  border-radius: 32px;
+  background: linear-gradient(90deg, #05345C, #074d8b, #085fab);
+
+  position: absolute;
+  top: 60%;
+  left: 24%;
+  transform: translateX(-50%);
+  z-index: 2;
+  
+  /* Add box-shadow glow animation instead */
+  animation: glowPulseFlood 4s ease-in-out infinite;
+  overflow: visible;
+  padding-bottom: 20px;
+}
+
+@keyframes glowPulseFlood {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(5, 52, 92, 0.7),
+      0 0 40px rgba(5, 52, 92, 0.5),
+      0 0 60px rgba(5, 52, 92, 0.4);
+  }
+  50% {
+    box-shadow: 
+      0 0 30px rgba(5, 52, 92, 0.9),
+      0 0 60px rgba(5, 52, 92, 1),
+      0 0 90px rgba(5, 52, 92, 1.1);
+  }
+}
+
+.flood-card{
+  width: 642px;
+  height: 388px;
+}
+
+.flood-img {
+  width: 314px;
+  height: 297px;
+  flex-shrink: 0;
+  z-index: 3;
+  
+  position: absolute;
+  top: 18%;
+  left: 27.5%;
+  transform: translateX(-50%);
+}
+
+.flood-img img {
+  width: 300px;
+  height: 300px;
+}
+.flood-text {
+  position: absolute;
+  top: -65%;
+  left: 90%;
+  transform: translateX(-50%);
+  
+  font-family: 'Anonim', cursive;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  width: 1000px; 
+  height:1000px;
+  
+  background: linear-gradient(90deg, #BFCEFF 0%, #C6A6E9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* fallback */
+  
+  z-index: 3;
+}
+
+.flood-text img {
+  width: 250px;
+  height:250px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.flood-info p {
+  width: 300px;  /* Increased width to prevent text cutoff */
+  height: auto;  /* Let height adjust to content */
+  flex-shrink: 0;
+  font-family: 'Piedra', cursive;
+  font-size: 24px;  /* Slightly reduced font size */
+  line-height: 1.4;  /* Better line height for readability */
+  letter-spacing: 0%;
+  text-align: center;
+  background: linear-gradient(180deg, #3385FF 0%, #00C8FF 50%, #08F 86.54%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  
+  position: absolute;
+  bottom: 23%;  /* Position from bottom */
+  left: 76%;
+  transform: translateX(-50%);  /* Center horizontally */
+  
+  z-index: 4;
+  padding: 15px;
+  margin: 0;
+  text-shadow: 
+      0 0 10px rgba(144, 150, 252, 0.5),
+      0 0 20px rgba(104, 112, 255, 0.3),
+      0 0 30px rgba(144, 150, 252, 0.1);
+}
+
+.card-flood {
+    padding-bottom: 120px;  /* Increased padding to accommodate text */
+}
+
+.flood-button button {
+  width: 120px;
+  height: 38px;
+  flex-shrink: 0;
+  
+  border-radius: 44px;
+  background: transparent;
+  border: 0.1px solid #fff;
+  
+  position: absolute;
+  bottom: 8%;
+  left: 76%;
+  transform: translateX(-50%);
+  
+  mix-blend-mode: plus-lighter;
+  border-radius: 25.5px;
+  border: 1px solid #fff;
+  background: transparent;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(270deg, #2DB1C8 0%, #516DF5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: plus-lighter;
+  cursor: pointer;
+}
