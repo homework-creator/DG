@@ -562,9 +562,9 @@
   background: transparent;
   margin-bottom: 30px;
     box-shadow: 
-    0 0 0px rgba(246, 75, 255, 0.5), /* 50% opacity */
-    0 0 20px rgba(246, 75, 255, 0.3), /* 30% opacity */
-    0 0 30px rgba(246, 75, 255, 0.1); /* 10% opacity */
+    0 0 0px rgba(246, 75, 255, 0.5), 
+    0 0 20px rgba(246, 75, 255, 0.3), 
+    0 0 30px rgba(246, 75, 255, 0.1); 
 }
 
 .login-form input::-webkit-input-placeholder { /* Chrome/Safari */
